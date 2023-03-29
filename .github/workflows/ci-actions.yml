@@ -206,7 +206,7 @@ jobs:
         run: tar -xzvf native-artifacts.tgz
       - name: Publish to Registry XBuilder Server
         # Uses sha for added security since tags can be updated
-        uses: elgohr/Publish-Docker-Github-Action@b2f63259b466ca5a4be395c392546de447450334
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: projectopenubl/xbuilder-server
           dockerfile: distribution/server-x/src/main/docker/Dockerfile.native
